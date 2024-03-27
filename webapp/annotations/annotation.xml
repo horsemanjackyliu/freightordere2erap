@@ -1,0 +1,103 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata4/sap/zfreightorder_srv_bind/srvd/sap/zfreightorder_service/0001/$metadata">
+        <edmx:Include Namespace="com.sap.gateway.srvd.zfreightorder_service.v0001" Alias="SAP__self"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="SAP__self.ZC_FREIGHTORDERType">
+                <Annotation Term="UI.Identification">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="TransportationOrder"/>
+                            <PropertyValue Property="Value" Path="Transportationorder"/>
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Label" String="UploadFile"/>
+                            <PropertyValue Property="Action" String="com.sap.gateway.srvd.zfreightorder_service.v0001.uploadfile(com.sap.gateway.srvd.zfreightorder_service.v0001.ZC_FREIGHTORDERType)"/>
+                            <PropertyValue Property="InvocationGrouping" EnumMember="UI.OperationGroupingType/Isolated"/>
+                            <Annotation Term="UI.Hidden"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Carrier"/>
+                            <PropertyValue Property="Value" Path="Carrier"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Shipper"/>
+                            <PropertyValue Property="Value" Path="Shipper"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="ShipperAddressID"/>
+                            <PropertyValue Property="Value" Path="ShipperAddressId"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Consignee"/>
+                            <PropertyValue Property="Value" Path="Consignee"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="ConsigneeAddressId"/>
+                            <PropertyValue Property="Value" Path="ConsigneeAddressId"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="TranspPurgOrg"/>
+                            <PropertyValue Property="Value" Path="TranspPurgOrg"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="TranspPurgGroup"/>
+                            <PropertyValue Property="Value" Path="TranspPurgGroup"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="PurgOrgCompanyCode"/>
+                            <PropertyValue Property="Value" Path="PurgOrgCompanyCode"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="CarrierAccountNumber"/>
+                            <PropertyValue Property="Value" Path="CarrierAccountNumber"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TranspOrdInvoicingCarri"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="CreatedByUser"/>
+                            <PropertyValue Property="Value" Path="CreatedByUser"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="TransportationMode"/>
+                            <PropertyValue Property="Value" Path="Transportationmode"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Transportationordertype"/>
+                            <PropertyValue Property="Value" Path="Transportationordertype"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Transportationshippingtype"/>
+                            <PropertyValue Property="Value" Path="Transportationshippingtype"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="TranspOrdExecutionIsBlocked"/>
+                            <PropertyValue Property="Value" Path="TranspOrdExecutionIsBl"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="TransportationOrderExec"/>
+                            <PropertyValue Property="Value" Path="TransportationOrderExec"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="SDMRepositoryid"/>
+                            <PropertyValue Property="Value" Path="Repositoryid"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="SDMFileobjectID"/>
+                            <PropertyValue Property="Value" Path="Fileobjectid"/>
+                        </Record>
+                        <Record Type="UI.DataFieldForAction">
+                            <PropertyValue Property="Action" String="com.sap.gateway.srvd.zfreightorder_service.v0001.downloadfile"/>
+                            <PropertyValue Property="Label" String="downloadfile"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
