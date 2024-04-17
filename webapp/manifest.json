@@ -158,6 +158,38 @@
                         "placement": "After",
                         "anchor": "DeleteAction"
                       }
+                    },
+                    "ShowPdf": {
+                      "press": ".extension.freightordermgt.ext.controller.FoController.showPdf",
+                      "visible": true,
+                      "enabled": true,
+                      "text": "Show PDF",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "UploadFiles"
+                      }
+                    }
+                  }
+                },
+                "body": {
+                  "sections": {
+                    "PdfFragment": {
+                      "template": "freightordermgt.ext.fragment.PdfFragment",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "idIdentification"
+                      },
+                      "title": "AttachmentViewer",
+                      "type": "XMLFragment"
+                    },
+                    "FreightOrderItems": {
+                      "template": "freightordermgt.ext.fragment.FreightOrderItems",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "idIdentification"
+                      },
+                      "title": "{i18n>freightorderitems}",
+                      "type": "XMLFragment"
                     }
                   }
                 }

@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:macros="sap.fe.macros" xmlns:smartTable="sap.ui.comp.smarttable">
+    <!-- <macros:Table id="itemtable" metaPath="_ITEMS/@com.sap.vocabularies.UI.v1.LineItem" header="Items" personalization="Column" readOnly="true">
+   
+    </macros:Table> -->
+ 
+    		<smartTable:SmartTable entitySet="" id="smartItemTable"
+			useVariantManagement="true" useTablePersonalisation="true" header="Line Items"
+			showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true"
+			demandPopin="true" class="sapUiResponsiveContentPadding" enableAutoColumnWidth="true" editTogglable="false" initialise=".extension.freightordermgt.ext.controller.FoController.onItemTable" />
+</core:FragmentDefinition>

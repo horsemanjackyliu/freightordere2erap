@@ -94,9 +94,137 @@
                         <Record Type="UI.DataFieldForAction">
                             <PropertyValue Property="Action" String="com.sap.gateway.srvd.zfreightorder_service.v0001.downloadfile"/>
                             <PropertyValue Property="Label" String="downloadfile"/>
+                            <Annotation Term="UI.Hidden"/>
                         </Record>
                     </Collection>
                 </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="Freight Order Header"/>
+                            <PropertyValue Property="ID" String="idIdentification"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.Identification"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.FieldGroup" Qualifier="ItemForm">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/Consignee"/>
+                                    <PropertyValue Property="Label" String="Consignee"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/ConsigneeAddressId"/>
+                                    <PropertyValue Property="Label" String="ConsigneeAddressId"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/MaterialFreightGroup"/>
+                                    <PropertyValue Property="Label" String="MaterialFreightGroup"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/ProductId"/>
+                                    <PropertyValue Property="Label" String="ProductId"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/Shipper"/>
+                                    <PropertyValue Property="Label" String="Shipper"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/ShipperAddressId"/>
+                                    <PropertyValue Property="Label" String="ShipperAddressId"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspBaseDocument"/>
+                                    <PropertyValue Property="Label" String="TranspBaseDocument"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspBaseDocumentItem"/>
+                                    <PropertyValue Property="Label" String="TranspBaseDocumentItem"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspBaseDocumentType"/>
+                                    <PropertyValue Property="Label" String="TranspBaseDocumentType"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspEquipmentPlateNum"/>
+                                    <PropertyValue Property="Label" String="TranspEquipmentPlateNum"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspEquipRegistration"/>
+                                    <PropertyValue Property="Label" String="TranspEquipRegistration"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItem"/>
+                                    <PropertyValue Property="Label" String="TranspOrdItem"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemCategory"/>
+                                    <PropertyValue Property="Label" String="TranspOrdItemCategory"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemDesc"/>
+                                    <PropertyValue Property="Label" String="TranspOrdItemDesc"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemDngrsGds"/>
+                                    <PropertyValue Property="Label" String="TranspOrdItemDngrsGds"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemGrossVo2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemGrossVolu"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemGrossWe2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemGrossWeig"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemNetWeig2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemNetWeight"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemPackageId"/>
+                                    <PropertyValue Property="Label" String="TranspOrdItemPackageId"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemQuantity"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemQuantityU"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TranspOrdItemType"/>
+                                    <PropertyValue Property="Label" String="TranspOrdItemType"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TransportationEquipmentG"/>
+                                    <PropertyValue Property="Label" String="TransportationEquipmentG"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TransportationEquipmentT"/>
+                                    <PropertyValue Property="Label" String="TransportationEquipmentT"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TransportationGroup"/>
+                                    <PropertyValue Property="Label" String="TransportationGroup"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="_ITEMS/TransportationOrderItem"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.Container/ZC_FREIGHTORDER">
+                <Annotation Term="UI.DeleteHidden" Bool="true"/>
             </Annotations>
         </Schema>
     </edmx:DataServices>
